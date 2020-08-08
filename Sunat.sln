@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30320.27
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sunat.WebApi", "Sunat.WebApi\Sunat.WebApi.csproj", "{4BEED247-49A0-4B90-A3D8-B2BF3501A9C6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tesseract.NetCore", "Tesseract\Tesseract.NetCore.csproj", "{A836E703-85E1-4A91-BDF7-C9D2D33C739E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4BEED247-49A0-4B90-A3D8-B2BF3501A9C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BEED247-49A0-4B90-A3D8-B2BF3501A9C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BEED247-49A0-4B90-A3D8-B2BF3501A9C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BEED247-49A0-4B90-A3D8-B2BF3501A9C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A836E703-85E1-4A91-BDF7-C9D2D33C739E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A836E703-85E1-4A91-BDF7-C9D2D33C739E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A836E703-85E1-4A91-BDF7-C9D2D33C739E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A836E703-85E1-4A91-BDF7-C9D2D33C739E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D773D777-9CF9-40C7-AF0D-DC86EB87F404}
+	EndGlobalSection
+EndGlobal
