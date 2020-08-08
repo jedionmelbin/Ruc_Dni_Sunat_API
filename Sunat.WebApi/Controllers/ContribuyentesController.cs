@@ -21,7 +21,7 @@ namespace Sunat.WebApi.Controllers
         private IWebHostEnvironment _environment;
         private IServiceClient serviceClient;
         private static string captcha = string.Empty;
-        
+        private static string tipoDoc = "1";
 
         public ContribuyentesController(IWebHostEnvironment environment,
             IServiceClient serviceClient)
@@ -30,10 +30,16 @@ namespace Sunat.WebApi.Controllers
             this.serviceClient = serviceClient;
         }
         // GET: api/<PersonasController>
-        [HttpGet]
+        [HttpGet("{ruc}", Name = "Contribuyentes")]
         public async Task<ServiceResult> Get(string ruc)
         {
             var service = new ServiceResult();
+
+            //if (ruc.Length == 8)
+            //{
+            //    tipoDoc = ""
+            //}
+
             var modelo = new Contribuyente();
             var captchaPams = new Dictionary<string, object>()
                     {
@@ -67,13 +73,13 @@ namespace Sunat.WebApi.Controllers
                         {"accion","consPorRuc" },
                         {"nroRuc",ruc },
                         {"codigo", captcha },
-                        {"tipdoc","1" }
+                        {"tipdoc",tipoDoc }
                     };
 
 
             string param = WebHelper.ConcatParams(contents);
             var response = await serviceClient.GetAsync("cl-ti-itmrconsruc/jcrS00Alias", param);
-           
+
             if (response.IsSuccessStatusCode)
             {
                 var htmlBody = await response.Content.ReadAsStringAsync();
@@ -138,6 +144,6 @@ namespace Sunat.WebApi.Controllers
             return cadena;
         }
 
-        
+
     }
 }
