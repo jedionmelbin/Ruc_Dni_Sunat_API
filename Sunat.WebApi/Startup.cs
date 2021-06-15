@@ -10,6 +10,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Sunat.WebApi.Models;
+using Sunat.WebApi.Service;
 
 namespace Sunat.WebApi
 {
@@ -26,9 +27,10 @@ namespace Sunat.WebApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddTransient<IServiceClient, ServiceClient>();
+            services.AddTransient<IExchangeRateService, ExchangeRateService>();
 
             services.AddControllers();
-
+            services.AddHttpClient<ExchangeRateService>();
             services.AddSwaggerGen();
         }
 

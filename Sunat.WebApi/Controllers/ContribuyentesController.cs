@@ -83,7 +83,7 @@ namespace Sunat.WebApi.Controllers
             if (response.IsSuccessStatusCode)
             {
                 var htmlBody = await response.Content.ReadAsStringAsync();
-                Console.WriteLine(htmlBody);
+                
 
                 HtmlAgilityPack.HtmlDocument document = new HtmlAgilityPack.HtmlDocument();
 
