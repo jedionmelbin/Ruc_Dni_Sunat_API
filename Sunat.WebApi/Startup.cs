@@ -9,6 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Sunat.WebApi.Common;
 using Sunat.WebApi.Models;
 using Sunat.WebApi.Service;
 
@@ -32,6 +33,12 @@ namespace Sunat.WebApi
             services.AddControllers();
             services.AddHttpClient<ExchangeRateService>();
             services.AddSwaggerGen();
+
+            services.AddCronJob<ExchangeCronJob3>(c =>
+            {
+                c.TimeZoneInfo = TimeZoneInfo.Local;
+                c.CronExpression = Configuration.GetSection("CronExpression").Value;
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

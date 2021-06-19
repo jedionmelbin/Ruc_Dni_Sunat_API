@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\source\\Ruc_Dni_Sunat_API\\Tesseract\\Tesseract.NetCore.csproj": {}
+    "D:\\source\\common\\Tesseract\\Tesseract.NetCore.csproj": {}
   },
   "projects": {
-    "D:\\source\\Ruc_Dni_Sunat_API\\Tesseract\\Tesseract.NetCore.csproj": {
+    "D:\\source\\common\\Tesseract\\Tesseract.NetCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\source\\Ruc_Dni_Sunat_API\\Tesseract\\Tesseract.NetCore.csproj",
+        "projectUniqueName": "D:\\source\\common\\Tesseract\\Tesseract.NetCore.csproj",
         "projectName": "Tesseract.NetCore",
-        "projectPath": "D:\\source\\Ruc_Dni_Sunat_API\\Tesseract\\Tesseract.NetCore.csproj",
+        "projectPath": "D:\\source\\common\\Tesseract\\Tesseract.NetCore.csproj",
         "packagesPath": "C:\\Users\\ibrahim\\.nuget\\packages\\",
-        "outputPath": "D:\\source\\Ruc_Dni_Sunat_API\\Tesseract\\obj_netfx\\",
+        "outputPath": "D:\\source\\common\\Tesseract\\obj_netfx\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
